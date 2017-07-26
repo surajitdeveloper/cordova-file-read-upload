@@ -1,0 +1,52 @@
+<div ng-controller="listing" class="pages">
+	<!-- Page, "data-page" contains page name -->
+	<div data-page="activity" class="page toolbar-fixed navbar-fixed" data-page="tabs-animated">
+            <div class="navbar">
+			<div class="navbar-inner">
+				<div ng-click="toggleLeft()" class="left">
+					<a  class="link icon-only open-panel"><i class="f7-icons color-deepblue">bars</i></a><!-- href="#" -->
+				</div>
+				<div class="center"><a href="index.html"><img src="img/logo-navbar@1x.png" alt="AG"/></a></div>
+				<div class="right">
+					<a href="#!tab" class="back link" data-force="true"><i class="f7-icons color-deepblue">arrow_left</i></a>
+				</div>
+			</div>
+		</div>
+		
+		<div class="listing-container">
+			<div class="content-block">
+				<div class="list-block inset">
+					<ul>
+						<li ng-repeat="value in posts" ng-bind-html-unsafe="value.text">
+							<a href="#!single?id={{value.id}}" class="item-link list-button">
+								<img width="58px" height="36px" class="listing-icon" src="{{value.image}}" alt="Text" /><!-- img/icon-text@1x.png --><!-- -->
+								<h2 class="listing-title">{{value.title}}</h2>
+								<p class="listing-txt">{{value.text}}</p>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	
+	</div>
+        <!-- menu -->
+        <md-sidenav class="md-sidenav-left" md-component-id="left"
+                md-disable-backdrop md-whiteframe="4">
+
+      <md-toolbar class="md-theme-indigo">
+        <!--h1 class="md-toolbar-tools">Disabled Backdrop</h1-->
+      </md-toolbar>
+
+      <md-content layout-margin>
+          <div class="list-block inset">
+            <ul>
+                <li><a href="#!tab">Home</a></li>
+                <li>Activity</li>
+                <li onclick="logout()"><a>Logout</a></li>
+            </ul>
+          </div>
+      </md-content>
+
+    </md-sidenav>
+</div>

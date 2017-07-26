@@ -1,0 +1,145 @@
+<div ng-controller="tabs" ng-init="get_categories()" class="pages">
+	<!-- Page, "data-page" contains page name -->
+	<div data-page="tabs" class="page toolbar-fixed navbar-fixed" data-page="tabs-animated">
+	        
+		<!--
+  <div class="navbar">
+			<div class="navbar-inner">
+				<div class="left">
+					<a href="#" class="link icon-only open-panel"><i class="f7-icons color-deepblue">bars</i></a>
+				</div>
+				<div class="center"><a href="index.html"><img src="img/logo-navbar@1x.png" alt="AG"/></a></div>
+				<div class="right">
+					<a href="/" class="back link" data-force="true"><i class="f7-icons color-deepblue">arrow_left</i></a>
+				</div>
+			</div>
+		</div>
+  -->
+            
+                <!-- tab design -->
+            
+            <ng-cloak>
+  <md-content>
+    <md-tabs>
+      <md-tab label="KNOWLEDGE">
+        <md-content class="md-padding">
+          <div id="tab-1" class="page-content tab active">
+            <div class="content-block">
+		<div class="list-block inset">
+                    <ul>
+                        <li ng-repeat="value in catagories">
+                            <a href="#!listing?id={{value.id}}" class="item-link list-button">
+				<i class="fa fa-check-square" aria-hidden="true"></i> {{value.name}}
+                            </a>
+			</li>
+                    </ul>
+		</div>
+            </div>
+	  </div>
+        </md-content>
+      </md-tab>
+      <md-tab label="LIVE HELP">
+        <md-content class="md-padding">
+            <div  id="tab-2" class="page-content tab">
+		<div class="content-block">
+                    <div class="live-help-container">
+			<h3 class="live-help-btn-title">Press The Button To Get</h3>
+                        <h4 class="live-help-title">Live Help</h4>
+			<a class="icon-live-help" href="tel:9999999999"><img src="img/icon-whatsapp@1x.png" alt="Whatsapp" /></a>
+                    </div>
+		</div>
+            </div>
+        </md-content>
+      </md-tab>
+        <md-tab label="REQUIREMENT">
+        <md-content class="md-padding">
+            <div  id="tab-3" class="page-content tab">
+		<div class="content-block">
+                    <div class="requirement-container">
+			<h3 class="requirement-title">Record 60sec</h3>
+			<a class="icon-record" href="#"><img src="img/icon-microphone@1x.png" alt="Microphone"/></a>
+			<p class="record-time">00:00</p>
+			<div class="req-devider"><p>OR</p></div>
+			<h3 class="requirement-title">Type Here</h3>
+			<div class="item-input"><textarea></textarea></div>  
+                        <div class="content-block">
+                            <p><a href="listen.html" class="item-link button button-fill color-green btn-green">Send</a></p>
+			</div>
+                    </div>
+		</div>
+            </div>
+        </md-content>
+      </md-tab>
+    </md-tabs>
+  </md-content>
+</ng-cloak>
+            
+            <!-- tab design -->
+		
+		<div class="toolbar tabbar">
+			<div class="toolbar-inner">
+				<a href="#tab-1" class="tab-link active">KNOWLEDGE</a>
+				<a href="#tab-2" class="tab-link">LIVE HELP</a>
+				<a href="#tab-3" class="tab-link">REQUIREMENT</a>
+			</div>
+		</div>
+		
+		
+                
+                
+                
+                <!--
+                <div class="tabs-animated-wrap">
+			<div class="tabs">
+				<div id="tab-1" class="page-content tab active">
+					<div class="content-block">
+						<div class="list-block inset">
+							<ul>
+                                                            <li ng-repeat="value in catagories">
+									<a href="#!listing?id={{value.id}}" class="item-link list-button">
+										<i class="fa fa-check-square" aria-hidden="true"></i> {{value.name}}
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div  id="tab-2" class="page-content tab">
+					<div class="content-block">
+						<div class="live-help-container">
+							<h3 class="live-help-btn-title">Press The Button To Get</h3>
+							<h4 class="live-help-title">Live Help</h4>
+							<a class="icon-live-help" href="tel:9999999999"><img src="img/icon-whatsapp@1x.png" alt="Whatsapp" /></a>
+						</div>
+					</div>
+				</div>
+				<div  id="tab-3" class="page-content tab">
+					<div class="content-block">
+						<div class="requirement-container">
+							<h3 class="requirement-title">Record 60sec</h3>
+							<a class="icon-record" href="#"><img src="img/icon-microphone@1x.png" alt="Microphone"/></a>
+							<p class="record-time">00:00</p>
+							<div class="req-devider">
+								<p>OR</p>
+							</div>
+							<h3 class="requirement-title">Type Here</h3>
+							<div class="item-input">
+								<textarea></textarea>
+							</div>  
+							<div class="content-block">
+								<p>
+									<a href="listen.html" class="item-link button button-fill color-green btn-green">Send</a>
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+                -->
+                
+            
+
+
+	</div>
+</div>
